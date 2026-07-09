@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Inter",sans-serif;
+    background:#0b0b0b;
+    color:#fff;
+}
+
+header{
+    max-width:1000px;
+    margin:0 auto;
+    padding:30px 20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo h1{
+    font-size:1.6rem;
+    font-weight:700;
+}
+
+.logo span{
+    color:#c01822;
+}
+
+nav{
+    display:flex;
+    gap:25px;
+}
+
+nav a{
+    color:#bcbcbc;
+    text-decoration:none;
+    transition:.2s;
+}
+
+nav a:hover{
+    color:#fff;
+}
+
+main{
+    max-width:1000px;
+    margin:0 auto;
+    padding:60px 20px;
+}
+
+.hero{
+    text-align:center;
+    padding:100px 0;
+}
+
+.hero h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:650px;
+    margin:0 auto;
+    color:#a9a9a9;
+    line-height:1.7;
+}
+
+.buttons{
+    margin-top:35px;
+}
+
+.buttons a{
+    display:inline-block;
+    text-decoration:none;
+    padding:12px 24px;
+    border-radius:6px;
+    margin:0 8px;
+    transition:.2s;
+}
+
+.primary{
+    background:#c01822;
+    color:white;
+}
+
+.primary:hover{
+    background:#d6222d;
+}
+
+.secondary{
+    border:1px solid #333;
+    color:white;
+}
+
+.secondary:hover{
+    background:#181818;
+}
+
+@media(max-width:700px){
+
+header{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero{
+    padding:70px 0;
+}
+
+.hero h2{
+    font-size:2.2rem;
+}
+
+}
